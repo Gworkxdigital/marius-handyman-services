@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0d0d0d"/>
+  <rect x="0" y="0" width="64" height="6" rx="2" fill="#f5a800"/>
+  <!-- Wrench shape -->
+  <path d="M38 12 C44 12 48 16 48 22 C48 25 47 27 45 29 L28 46 C26 48 24 48 22 46 L18 42 C16 40 16 38 18 36 L35 19 C37 17 38 12 38 12Z" fill="#f5a800"/>
+  <circle cx="22" cy="44" r="4" fill="#0d0d0d"/>
+  <!-- Handle detail -->
+  <rect x="14" y="10" width="8" height="20" rx="4" fill="#f5a800" transform="rotate(-45 18 20)"/>
+</svg>
