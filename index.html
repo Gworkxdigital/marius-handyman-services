@@ -198,6 +198,8 @@ img { max-width: 100%; display: block; }
 .services__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 48px; }
 .services__last-row { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
 .services__last-row .svc-card { width: calc(33.333% - 10px); max-width: 360px; }
+@media (max-width: 768px) { .services__last-row { flex-direction: row; } .services__last-row .svc-card { width: calc(50% - 10px); } }
+@media (max-width: 480px) { .services__last-row { flex-direction: column; } .services__last-row .svc-card { width: 100%; max-width: 100%; } }
 .svc-card { background: var(--clr-surface); border: 2px solid rgba(245,168,0,0.25); border-radius: var(--radius); padding: 28px; box-shadow: 4px 4px 0 rgba(245,168,0,0.2); transition: all 0.2s ease; text-decoration: none; display: block; position: relative; overflow: hidden; }
 .svc-card::before { content: ''; position: absolute; inset: 0; background: var(--clr-accent); opacity: 0; transition: opacity 0.2s; z-index: 0; }
 .svc-card:hover { transform: translate(-3px,-3px); box-shadow: 7px 7px 0 var(--clr-accent); border-color: var(--clr-accent); }
@@ -220,7 +222,7 @@ img { max-width: 100%; display: block; }
 .why-stat__label { font-size: 13px; color: var(--clr-muted); margin-top: 4px; }
 .why__copy p { font-size: 16px; line-height: 1.75; color: var(--clr-muted); margin-bottom: 16px; }
 .why__copy p strong { color: var(--clr-accent); }
-.why__actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+.why__actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; justify-content: center; }
 
 /* ════════════════════════════════════════════════════
    PROCESS — NUMBERED CARDS (Component Process-3)
@@ -692,9 +694,9 @@ img { max-width: 100%; display: block; }
         <span class="tag">Why Choose Marius</span>
         <h2 class="h2 h2--accent">What Makes Marius's Handyman<br>Services <span>Different?</span></h2>
         <p>Most people have been let down by tradespeople who don't show up, give vague quotes, or do shoddy work and disappear. That's exactly what Marius set out to fix when he started this business.</p>
-        <p>With <strong>Marius you get one person</strong> — not a team of subcontractors you've never met. He handles the job himself, takes pride in his work, and treats your home the same way he'd treat his own. That's a rare thing these days.</p>
+        <p>With <strong>Marius's Handyman Services you get one person</strong> — not a team of subcontractors you've never met. He handles the job himself, takes pride in his work, and treats your home the same way he'd treat his own. That's a rare thing these days.</p>
         <p>He's been serving Pretoria East for over a decade with a growing list of repeat clients and a <strong>5-star Google reputation</strong> that speaks for itself. When you WhatsApp Marius, you're talking to the guy who'll actually be doing the job.</p>
-        <div class="why__actions">
+        <div class="why__actions" style="justify-content:center;text-align:center">
           <a href="tel:0837660650" class="btn btn--primary">📞 Call Now</a>
           <a href="https://wa.me/27837660650?text=Hi+Marius!+I'd+like+a+free+quote+please." class="btn btn--wa">💬 WhatsApp</a>
         </div>
@@ -826,7 +828,7 @@ img { max-width: 100%; display: block; }
 <!-- ── CTA BAND ── -->
 <section class="cta-band">
   <div class="inner">
-    <h2>Stop Searching.<br>Call Marius.</h2>
+    <h2>Stop Searching.<br>Call Marius's Handyman Services.</h2>
     <p>You've found Pretoria East's most reliable handyman. Getting a free quote takes 30 seconds — call or WhatsApp right now and let's get your job sorted.</p>
     <div class="cta-band__actions">
       <a href="tel:0837660650" class="btn btn--cta-dark">📞 Call 083 766 0650</a>
