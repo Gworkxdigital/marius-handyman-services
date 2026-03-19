@@ -121,8 +121,8 @@ img { max-width: 100%; display: block; }
 .nav__mobile ul { list-style: none; }
 .nav__mobile ul li a { display: block; padding: 10px 0; font-family: var(--font-heading); font-size: 16px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--clr-text); border-bottom: 1px solid rgba(255,255,255,0.05); transition: color 0.2s; }
 .nav__mobile ul li a:hover { color: var(--clr-accent); }
-.nav__mobile-ctas { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; align-items: center; }
-.nav__mobile-ctas .btn { justify-content: center; width: 100%; text-align: center; }
+.nav__mobile-ctas { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; align-items: stretch; }
+.nav__mobile-ctas .btn { justify-content: center; width: 100%; text-align: center; box-sizing: border-box; display: flex; }
 
 /* ════════════════════════════════════════════════════
    HERO — OVERLAY CARD (Component C)
@@ -162,6 +162,9 @@ img { max-width: 100%; display: block; }
 .trust-strip { background: var(--clr-accent); padding: 16px 0; }
 .trust-strip__inner { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; }
 .trust-strip__item { font-family: var(--font-heading); font-size: 14px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--clr-dark); display: flex; align-items: center; gap: 8px; }
+@media (max-width: 768px) {
+  .trust-strip__inner { flex-direction: column; gap: 14px; align-items: flex-start; padding: 0 28px; }
+}
 
 /* ════════════════════════════════════════════════════
    PAIN POINTS
